@@ -6,7 +6,19 @@
   <title>FlixBus</title>
 </head>
 <body>
-<elevenlabs-convai agent-id="agent_01k0phtb6yewdb26p0tcx3n9e0"></elevenlabs-convai><script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+<elevenlabs-convai override-language="de" agent-id="agent_01k0phtb6yewdb26p0tcx3n9e0"></elevenlabs-convai><script src="https://unpkg.com/@elevenlabs/convai-widget-embed" type="text/javascript"></script>
+
+<script>
+const el = document.querySelector('elevenlabs-convai');
+const root = el?.shadowRoot;
+
+if (root && !root.querySelector('#hide-elevenlabs-style')) {
+  const style = document.createElement('style');
+  style.id = 'hide-elevenlabs-style';
+  style.textContent = `.opacity-30 { display: none !important; }`;
+  root.appendChild(style);
+}  
+</script>
 
 <div style="margin: 20px; padding: 15px; background-color: #f0f0f0; border-radius: 8px;">
   <h3>FlixBus Reiseverfolgung</h3>
