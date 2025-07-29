@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlixBus</title>
+</head>
+<body>
+<elevenlabs-convai agent-id="agent_6501k1bgdft3fxwa5m7177vr6fre"></elevenlabs-convai><script src="https://unpkg.com/@elevenlabs/convai-widget-embed" type="text/javascript"></script>
+
+<script>
+const el = document.querySelector('elevenlabs-convai');
+const root = el?.shadowRoot;
+
+if (root && !root.querySelector('#hide-elevenlabs-style')) {
+  const style = document.createElement('style');
+  style.id = 'hide-elevenlabs-style';
+  style.textContent = `.opacity-30 { display: none !important; }`;
+  root.appendChild(style);
+}  
+</script>
+
+
+<div style="margin: 20px; padding: 15px; background-color: #f0f0f0; border-radius: 8px;">
+  <h3>FlixBus यात्रा ट्रैकिंग</h3>
+  <p>आप अपनी यात्रा को ट्रैक करने के लिए FlixBus वेबसाइट का उपयोग कर सकते हैं: <a href="https://global.flixbus.com/track" target="_blank">https://global.flixbus.com/track</a></p>
+  
+  <h4>परीक्षण बुकिंग नंबर:</h4>
+  <ul>
+    <li>3214337745 (पुराना)</li>
+    <li>3269110182</li>
+  </ul>
+</div>
+
+</body>
+</html>
